@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RecordingSound</string>
+    <string name="record">Record</string>
+    <string name="play">Play</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

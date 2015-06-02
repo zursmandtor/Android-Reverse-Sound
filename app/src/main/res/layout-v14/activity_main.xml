@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@android:color/holo_red_light">
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_gravity="center"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="22dp">
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@android:dimen/app_icon_size">
+    </ProgressBar>
+
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:onClick="onClickRecord"
+        android:text="@string/record"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_shape_btn_play"
+        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:shadowColor="@android:color/black"
+        android:singleLine="false"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:textSize="22dp">
+    </Button>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:onClick="onClickPlay"
+        android:text="@string/play"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:background="@drawable/round_shape_btn_record"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:shadowColor="@android:color/black">
+    </Button>
+
+
+
+</LinearLayout>
